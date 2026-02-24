@@ -1,37 +1,155 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Termos de Uso — Rota dos Encontros</title>
-<style>
-:root{--bg1:#0F0F0F;--bg2:#1A1A1A;--card:#1A1A1A;--panel:#111827;--orange:#F97316;--gold:#F5C542;--text:#D1D5DB;--muted:#9CA3AF;--white:#fff;}
-body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(135deg,var(--bg1),var(--bg2));color:var(--text);line-height:1.6}
-.container{max-width:960px;margin:auto;padding:24px}
-.card{background:var(--card);border:2px solid rgba(249,115,22,.30);border-radius:16px;padding:24px}
-h1{color:var(--white);font-size:clamp(28px,4vw,44px);margin:0}
-a{color:var(--orange);text-decoration:none}
-a:hover{text-decoration:underline}
-.nav{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:18px}
-.nav a{font-weight:700}
-.small{color:var(--muted);font-size:14px}
-.callout{margin-top:18px;background:var(--panel);border:1px solid rgba(249,115,22,.40);border-radius:12px;padding:12px 14px;color:var(--gold)}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Termos de Uso — Rota dos Encontros</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f0f0f; color: #e5e7eb; line-height: 1.7; }
+    header { background: #1a1a1a; border-bottom: 3px solid #f97316; padding: 16px 24px; }
+    nav { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+    nav a { color: #f97316; text-decoration: none; font-size: 14px; font-weight: 600; padding: 6px 12px; border: 1px solid #f97316; border-radius: 6px; transition: background 0.2s; }
+    nav a:hover, nav a.active { background: #f97316; color: #fff; }
+    .container { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
+    .badge { display: inline-block; background: #f97316; color: #fff; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 20px; margin-bottom: 16px; letter-spacing: 1px; }
+    h1 { font-size: 2rem; font-weight: 800; color: #fff; margin-bottom: 8px; }
+    .meta { color: #9ca3af; font-size: 14px; margin-bottom: 40px; }
+    h2 { font-size: 1.15rem; font-weight: 700; color: #f97316; margin: 36px 0 12px; border-left: 4px solid #f97316; padding-left: 12px; }
+    p { margin-bottom: 12px; color: #d1d5db; }
+    ul { margin: 8px 0 12px 20px; color: #d1d5db; }
+    ul li { margin-bottom: 6px; }
+    .highlight { background: #1f2937; border: 1px solid #f97316; border-radius: 8px; padding: 16px 20px; margin: 16px 0; }
+    .highlight p { margin: 0; }
+    a { color: #f97316; }
+    footer { background: #1a1a1a; border-top: 2px solid #f97316; padding: 24px; text-align: center; color: #9ca3af; font-size: 13px; }
+    footer a { color: #f97316; text-decoration: none; margin: 0 8px; }
+  </style>
 </head>
 <body>
-<div class="container">
-  <div class="nav">
-    <a href="index.html">Política de Privacidade</a> ·
-    <a href="politica-eventos.html">Política de Eventos</a> ·
-    <a href="seguranca.html">Padrões de Segurança</a> ·
-    <a href="termos.html">Termos de Uso</a>
-  </div>
+<header>
+  <nav>
+    <a href="index.html">Política de Privacidade</a>
+    <a href="politica-eventos.html">Política de Eventos</a>
+    <a href="seguranca.html">Padrões de Segurança</a>
+    <a href="termos.html" class="active">Termos de Uso</a>
+  </nav>
+</header>
 
-  <div class="card">
-    <h1>Termos de Uso</h1>
-    <div class="small">Rota dos Encontros • Em construção (publicaremos a versão completa em breve)</div>
-    <div class="callout">✅ Por enquanto, use as páginas de Privacidade, Eventos e Segurança como referência oficial de regras e conduta.</div>
+<div class="container">
+  <span class="badge">📋 TERMOS DE USO</span>
+  <h1>Termos de Uso</h1>
+  <p class="meta">Rota dos Encontros &nbsp;•&nbsp; Última atualização: <strong>24/02/2026</strong></p>
+
+  <h2>1. Aceitação dos termos</h2>
+  <p>Ao criar uma conta ou utilizar o aplicativo <strong>Rota dos Encontros</strong>, você declara ter lido, compreendido e concordado com estes Termos de Uso. Caso não concorde com qualquer parte, não utilize a plataforma.</p>
+
+  <h2>2. Descrição do serviço</h2>
+  <p>O Rota dos Encontros é uma plataforma digital gratuita voltada à comunidade motociclística brasileira. Oferecemos funcionalidades como:</p>
+  <ul>
+    <li>Divulgação e descoberta de eventos e encontros motociclísticos</li>
+    <li>Cadastro e gestão de motoclubes</li>
+    <li>Perfil de piloto com sistema de gamificação (pontos, níveis e badges)</li>
+    <li>Feed de atividades, galeria de fotos e histórias da comunidade</li>
+    <li>Mapa interativo de eventos</li>
+    <li>Ranking de pilotos e motoclubes</li>
+    <li>Assistente de IA para suporte dentro do app</li>
+  </ul>
+
+  <h2>3. Elegibilidade</h2>
+  <p>Para usar o Rota dos Encontros você deve:</p>
+  <ul>
+    <li>Ter no mínimo <strong>13 anos de idade</strong></li>
+    <li>Ter capacidade legal para aceitar estes termos</li>
+    <li>Fornecer informações verdadeiras no cadastro</li>
+    <li>Não ter sido previamente banido ou suspenso da plataforma</li>
+  </ul>
+
+  <h2>4. Conta e responsabilidade</h2>
+  <p>Você é responsável por:</p>
+  <ul>
+    <li>Manter a confidencialidade das suas credenciais de acesso</li>
+    <li>Toda atividade realizada com sua conta</li>
+    <li>Notificar imediatamente sobre uso não autorizado da sua conta</li>
+    <li>Manter seus dados cadastrais atualizados e verídicos</li>
+  </ul>
+  <p>É proibido criar contas falsas, se passar por outra pessoa ou usar a plataforma com identidade fraudulenta.</p>
+
+  <h2>5. Conduta do usuário</h2>
+  <p>Ao usar a plataforma, você concorda em <strong>não</strong>:</p>
+  <ul>
+    <li>Publicar conteúdo ilegal, ofensivo, discriminatório ou que incite violência</li>
+    <li>Assediar, ameaçar ou intimidar outros usuários</li>
+    <li>Publicar conteúdo sexual explícito ou envolvendo menores</li>
+    <li>Fazer spam, phishing ou divulgar golpes</li>
+    <li>Usar a plataforma para fins comerciais sem autorização prévia</li>
+    <li>Tentar acessar áreas restritas ou manipular o sistema de pontuação</li>
+    <li>Publicar conteúdo que viole direitos autorais ou de imagem de terceiros</li>
+    <li>Usar bots, scripts ou automações sem autorização</li>
+  </ul>
+
+  <h2>6. Conteúdo gerado pelo usuário (UGC)</h2>
+  <p>Ao publicar conteúdo (fotos, eventos, stories, comentários), você:</p>
+  <ul>
+    <li>Declara ser o titular ou ter autorização para publicar tal conteúdo</li>
+    <li>Concede ao Rota dos Encontros licença não exclusiva para exibir, distribuir e reproduzir o conteúdo dentro da plataforma</li>
+    <li>Permanece responsável pelo conteúdo publicado</li>
+  </ul>
+  <p>Podemos remover qualquer conteúdo que viole estes termos, sem aviso prévio.</p>
+
+  <h2>7. Gamificação</h2>
+  <p>O sistema de pontos, níveis e badges é uma funcionalidade de engajamento sem valor monetário. Pontos e recompensas não são transferíveis, não podem ser trocados por dinheiro e podem ser ajustados ou removidos em caso de uso indevido.</p>
+
+  <h2>8. Eventos e motoclubes</h2>
+  <p>O Rota dos Encontros é uma plataforma de <strong>divulgação</strong>. Não somos organizadores dos eventos listados. A responsabilidade pela realização, segurança e informações de cada evento é exclusiva do organizador. Recomendamos sempre confirmar informações diretamente com o motoclube organizador antes de se deslocar.</p>
+
+  <h2>9. Moderação e suspensão</h2>
+  <p>Reservamo-nos o direito de, a nosso critério:</p>
+  <ul>
+    <li>Remover conteúdo que viole estes termos</li>
+    <li>Suspender ou encerrar contas permanentemente</li>
+    <li>Limitar acesso a funcionalidades</li>
+    <li>Cooperar com autoridades em investigações legais</li>
+  </ul>
+
+  <h2>10. Exclusão de conta</h2>
+  <p>Você pode excluir sua conta a qualquer momento diretamente no app em <em>Perfil → Excluir conta</em>. Após a exclusão, seus dados pessoais serão removidos ou anonimizados conforme descrito em nossa <a href="index.html">Política de Privacidade</a>.</p>
+
+  <h2>11. Disponibilidade do serviço</h2>
+  <p>Nos esforçamos para manter a plataforma disponível, mas não garantimos disponibilidade ininterrupta. Podemos realizar manutenções, atualizações ou descontinuar funcionalidades a qualquer momento, preferencialmente com aviso prévio.</p>
+
+  <h2>12. Limitação de responsabilidade</h2>
+  <p>O Rota dos Encontros não se responsabiliza por:</p>
+  <ul>
+    <li>Danos decorrentes de eventos listados na plataforma</li>
+    <li>Conteúdo publicado por terceiros usuários</li>
+    <li>Perda de dados por falhas técnicas fora do nosso controle</li>
+    <li>Uso indevido da plataforma por outros usuários</li>
+  </ul>
+
+  <h2>13. Propriedade intelectual</h2>
+  <p>O nome, logotipo, design e código do Rota dos Encontros são propriedade de seus criadores. É proibido reproduzir, copiar ou distribuir qualquer parte da plataforma sem autorização expressa.</p>
+
+  <h2>14. Lei aplicável</h2>
+  <p>Estes termos são regidos pelas leis brasileiras, especialmente o <strong>Marco Civil da Internet</strong> (Lei nº 12.965/2014), o <strong>Código de Defesa do Consumidor</strong> e a <strong>Lei Geral de Proteção de Dados</strong> (Lei nº 13.709/2018). Fica eleito o foro da comarca de domicílio do usuário para resolução de conflitos.</p>
+
+  <h2>15. Alterações nestes termos</h2>
+  <p>Podemos atualizar estes termos periodicamente. Notificaremos usuários sobre mudanças relevantes pelo app. O uso continuado após as alterações implica aceitação da nova versão.</p>
+
+  <h2>16. Contato</h2>
+  <div class="highlight">
+    <p>📧 <strong>rotadosencontros.review@gmail.com</strong><br/>Respondemos em até 5 dias úteis.</p>
   </div>
 </div>
+
+<footer>
+  <p>© 2026 Rota dos Encontros — Plataforma Nacional de Eventos Motociclísticos</p>
+  <p style="margin-top:8px;">
+    <a href="index.html">Privacidade</a> •
+    <a href="politica-eventos.html">Eventos</a> •
+    <a href="seguranca.html">Segurança</a> •
+    <a href="termos.html">Termos</a>
+  </p>
+</footer>
 </body>
 </html>
