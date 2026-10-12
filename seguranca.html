@@ -1,74 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Padrões de Segurança — Rota dos Encontros</title>
-<style>
-:root{--bg1:#0F0F0F;--bg2:#1A1A1A;--card:#1A1A1A;--panel:#111827;--orange:#F97316;--gold:#F5C542;--text:#D1D5DB;--muted:#9CA3AF;--white:#fff;}
-body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(135deg,var(--bg1),var(--bg2));color:var(--text);line-height:1.6}
-.container{max-width:960px;margin:auto;padding:24px}
-.card{background:var(--card);border:2px solid rgba(249,115,22,.30);border-radius:16px;padding:24px}
-h1{color:var(--white);font-size:clamp(28px,4vw,44px);margin:0}
-h2{color:var(--white);margin-top:22px}
-a{color:var(--orange);text-decoration:none}
-a:hover{text-decoration:underline}
-.nav{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:18px}
-.nav a{font-weight:700}
-.badge{display:inline-flex;gap:8px;align-items:center;color:var(--gold);font-size:13px}
-.small{color:var(--muted);font-size:14px}
-.callout{margin-top:18px;background:var(--panel);border:1px solid rgba(249,115,22,.40);border-radius:12px;padding:12px 14px;color:var(--gold)}
-.footer{margin-top:32px;padding-top:18px;border-top:1px solid rgba(249,115,22,.30);text-align:center;font-size:13px;color:var(--muted)}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Padrões de Segurança — Rota dos Encontros</title>
+  <meta name="description" content="Padrões de segurança do Rota dos Encontros: conteúdos proibidos, denúncias e moderação.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-<div class="container">
-  <div class="nav">
-    <a href="index.html">Política de Privacidade</a> ·
-    <a href="politica-eventos.html">Política de Eventos</a> ·
-    <a href="seguranca.html">Padrões de Segurança</a> ·
-    <a href="termos.html">Termos de Uso</a>
+<header class="topo">
+  <div class="topo-interno">
+    <p class="marca-nome">Rota dos Encontros<span>Documentos legais</span></p>
+    <nav class="abas" aria-label="Documentos">
+      <a href="index.html">Política de Privacidade</a>
+      <a href="politica-eventos.html">Política de Eventos</a>
+      <a href="seguranca.html" aria-current="page">Padrões de Segurança</a>
+      <a href="termos.html">Termos de Uso</a>
+    </nav>
   </div>
+</header>
 
-  <div class="card">
-    <div style="display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:flex-start;">
-      <div>
-        <h1>Padrões de Segurança</h1>
-        <div class="small">Rota dos Encontros • Última atualização: <strong style="color:#fff;">15/02/2026</strong></div>
-      </div>
-      <div class="badge">🧯 Denúncia • Moderação • Proteção</div>
-    </div>
+<div class="pagina">
+  <aside class="indice" aria-label="Índice">
+    <details open>
+      <summary>Nesta página</summary>
+      <h2>Nesta página</h2>
+      <ol>
+        <li><a href="#s1">1. Compromisso</a></li>
+        <li><a href="#s2">2. Denúncias</a></li>
+        <li><a href="#s3">3. Conteúdos proibidos</a></li>
+        <li><a href="#s4">4. Moderação e ações</a></li>
+        <li><a href="#s5">5. Contato responsável</a></li>
+      </ol>
+    </details>
+  </aside>
 
-    <h2>1. Compromisso</h2>
-    <p>A Rota dos Encontros mantém padrões de segurança para proteger usuários, especialmente em conteúdo gerado por usuários (UGC), interações e publicações.</p>
+  <main class="documento">
+    <p class="tipo-doc">Denúncia, moderação e proteção</p>
+    <h1>Padrões de Segurança</h1>
+    <dl class="meta">
+      <dt>Última atualização</dt><dd>15/02/2026</dd>
+      <dt>Responsável</dt><dd>Maicon Kirsten</dd>
+      <dt>Contato</dt><dd><a href="mailto:rotadosencontros.review@gmail.com">rotadosencontros.review@gmail.com</a></dd>
+    </dl>
 
-    <h2>2. Denúncias</h2>
-    <p>Usuários podem denunciar conteúdo e comportamentos inadequados dentro do app. Também aceitamos denúncias pelo e-mail:</p>
-    <p><strong style="color:#fff;">rotadosencontros.review@gmail.com</strong></p>
+    <section aria-labelledby="s1">
+      <h2 id="s1"><span class="num">1.</span>Compromisso</h2>
+      <p>A Rota dos Encontros mantém padrões de segurança para proteger usuários, especialmente em conteúdo gerado por usuários (UGC), interações e publicações.</p>
+    </section>
 
-    <h2>3. Conteúdos proibidos</h2>
-    <ul>
-      <li>Assédio, ameaças ou incentivo à violência</li>
-      <li>Discurso de ódio e discriminação</li>
-      <li>Conteúdo ilegal ou fraudulento</li>
-      <li>Exposição de dados pessoais de terceiros</li>
-      <li>Conteúdo sexual envolvendo menores (tolerância zero)</li>
-    </ul>
+    <section aria-labelledby="s2">
+      <h2 id="s2"><span class="num">2.</span>Denúncias</h2>
+      <p>Usuários podem denunciar conteúdo e comportamentos inadequados dentro do app. Também aceitamos denúncias pelo e-mail <a href="mailto:rotadosencontros.review@gmail.com">rotadosencontros.review@gmail.com</a>.</p>
+    </section>
 
-    <h2>4. Moderação e ações</h2>
-    <p>Podemos remover conteúdo, restringir funcionalidades, suspender ou bloquear contas que violem regras. Quando necessário, cooperamos com autoridades competentes.</p>
+    <section aria-labelledby="s3">
+      <h2 id="s3"><span class="num">3.</span>Conteúdos proibidos</h2>
+      <ul><li>Assédio, ameaças ou incentivo à violência</li><li>Discurso de ódio e discriminação</li><li>Conteúdo ilegal ou fraudulento</li><li>Exposição de dados pessoais de terceiros</li><li>Conteúdo sexual envolvendo menores (tolerância zero)</li></ul>
+    </section>
 
-    <h2>5. Contato responsável</h2>
-    <p>Canal oficial para questões de segurança:</p>
-    <p><strong style="color:#fff;">rotadosencontros.review@gmail.com</strong></p>
+    <section aria-labelledby="s4">
+      <h2 id="s4"><span class="num">4.</span>Moderação e ações</h2>
+      <p>Podemos remover conteúdo, restringir funcionalidades, suspender ou bloquear contas que violem regras. Quando necessário, cooperamos com autoridades competentes.</p>
+    </section>
 
-    <div class="callout">⚠️ Se houver risco imediato, procure as autoridades locais e serviços de emergência da sua região.</div>
-
-    <div class="footer">
-      © 2026 Rota dos Encontros — Plataforma Nacional de Eventos Motociclísticos<br>
-      <a href="index.html">Privacidade</a> • <a href="politica-eventos.html">Eventos</a> • <a href="seguranca.html">Segurança</a> • <a href="termos.html">Termos</a>
-    </div>
-  </div>
+    <section aria-labelledby="s5">
+      <h2 id="s5"><span class="num">5.</span>Contato responsável</h2>
+      <p>Canal oficial para questões de segurança:</p><div class="contato-bloco"><p class="rotulo">Canal oficial</p><p><strong><a href="mailto:rotadosencontros.review@gmail.com">rotadosencontros.review@gmail.com</a></strong><br>Respondemos em até 5 dias úteis.</p></div><div class="nota"><p><strong>Em caso de risco imediato,</strong> procure as autoridades locais e os serviços de emergência da sua região.</p></div>
+    </section>
+  </main>
 </div>
+
+<footer class="rodape">
+  <div class="rodape-interno">
+    <p>© 2026 Rota dos Encontros — Plataforma de eventos motociclísticos</p>
+    <nav aria-label="Documentos legais">
+        <a href="index.html">Política de Privacidade</a>
+        <a href="politica-eventos.html">Política de Eventos</a>
+        <a href="seguranca.html">Padrões de Segurança</a>
+        <a href="termos.html">Termos de Uso</a>
+      </nav>
+  </div>
+</footer>
+<script>
+  // celular: índice começa fechado (no computador ele fica sempre visível pelo CSS)
+  if (window.matchMedia('(max-width: 959px)').matches) {
+    var d = document.querySelector('.indice details'); if (d) d.removeAttribute('open');
+  }
+</script>
 </body>
 </html>

@@ -1,142 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Política de Privacidade — Rota dos Encontros</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f0f0f; color: #e5e7eb; line-height: 1.7; }
-    header { background: #1a1a1a; border-bottom: 3px solid #f97316; padding: 16px 24px; }
-    nav { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
-    nav a { color: #f97316; text-decoration: none; font-size: 14px; font-weight: 600; padding: 6px 12px; border: 1px solid #f97316; border-radius: 6px; transition: background 0.2s; }
-    nav a:hover, nav a.active { background: #f97316; color: #fff; }
-    .container { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
-    .badge { display: inline-block; background: #f97316; color: #fff; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 20px; margin-bottom: 16px; letter-spacing: 1px; }
-    h1 { font-size: 2rem; font-weight: 800; color: #fff; margin-bottom: 8px; }
-    .meta { color: #9ca3af; font-size: 14px; margin-bottom: 40px; }
-    h2 { font-size: 1.15rem; font-weight: 700; color: #f97316; margin: 36px 0 12px; border-left: 4px solid #f97316; padding-left: 12px; }
-    p { margin-bottom: 12px; color: #d1d5db; }
-    ul { margin: 8px 0 12px 20px; color: #d1d5db; }
-    ul li { margin-bottom: 6px; }
-    .highlight { background: #1f2937; border: 1px solid #f97316; border-radius: 8px; padding: 16px 20px; margin: 16px 0; }
-    .highlight p { margin: 0; }
-    a { color: #f97316; }
-    table { width: 100%; border-collapse: collapse; margin: 16px 0; }
-    th { background: #1f2937; color: #f97316; text-align: left; padding: 10px 14px; font-size: 13px; }
-    td { padding: 10px 14px; border-bottom: 1px solid #374151; color: #d1d5db; font-size: 14px; }
-    tr:last-child td { border-bottom: none; }
-    footer { background: #1a1a1a; border-top: 2px solid #f97316; padding: 24px; text-align: center; color: #9ca3af; font-size: 13px; }
-    footer a { color: #f97316; text-decoration: none; margin: 0 8px; }
-  </style>
+  <meta name="description" content="Como o Rota dos Encontros coleta, usa e protege dados pessoais, conforme a LGPD.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-<header>
-  <nav>
-    <a href="index.html" class="active">Política de Privacidade</a>
-    <a href="politica-eventos.html">Política de Eventos</a>
-    <a href="seguranca.html">Padrões de Segurança</a>
-    <a href="termos.html">Termos de Uso</a>
-  </nav>
+<header class="topo">
+  <div class="topo-interno">
+    <p class="marca-nome">Rota dos Encontros<span>Documentos legais</span></p>
+    <nav class="abas" aria-label="Documentos">
+      <a href="index.html" aria-current="page">Política de Privacidade</a>
+      <a href="politica-eventos.html">Política de Eventos</a>
+      <a href="seguranca.html">Padrões de Segurança</a>
+      <a href="termos.html">Termos de Uso</a>
+    </nav>
+  </div>
 </header>
 
-<div class="container">
-  <span class="badge">🔒 PRIVACIDADE & LGPD</span>
-  <h1>Política de Privacidade</h1>
-  <p class="meta">Rota dos Encontros &nbsp;•&nbsp; Última atualização: <strong>24/02/2026</strong></p>
+<div class="pagina">
+  <aside class="indice" aria-label="Índice">
+    <details open>
+      <summary>Nesta página</summary>
+      <h2>Nesta página</h2>
+      <ol>
+        <li><a href="#s1">1. Quem somos</a></li>
+        <li><a href="#s2">2. Dados que coletamos</a></li>
+        <li><a href="#s3">3. Como usamos os dados</a></li>
+        <li><a href="#s4">4. Terceiros e processadores de dados</a></li>
+        <li><a href="#s5">5. Dados de uso local (localStorage)</a></li>
+        <li><a href="#s6">6. Conteúdo público</a></li>
+        <li><a href="#s7">7. Segurança</a></li>
+        <li><a href="#s8">8. Crianças e menores de idade</a></li>
+        <li><a href="#s9">9. Seus direitos (LGPD)</a></li>
+        <li><a href="#s10">10. Retenção de dados</a></li>
+        <li><a href="#s11">11. Alterações nesta política</a></li>
+        <li><a href="#s12">12. Contato</a></li>
+      </ol>
+    </details>
+  </aside>
 
-  <h2>1. Quem somos</h2>
-  <p>O <strong>Rota dos Encontros</strong> é uma plataforma digital voltada à comunidade motociclística brasileira, que permite o cadastro e divulgação de eventos, motoclubes, perfis de pilotos e conteúdo relacionado. O responsável pelo tratamento dos dados é <strong>Maicon Kirsten</strong>, contato: <a href="mailto:rotadosencontros.review@gmail.com">rotadosencontros.review@gmail.com</a>.</p>
+  <main class="documento">
+    <p class="tipo-doc">Privacidade e LGPD</p>
+    <h1>Política de Privacidade</h1>
+    <dl class="meta">
+      <dt>Última atualização</dt><dd>24/02/2026</dd>
+      <dt>Responsável</dt><dd>Maicon Kirsten</dd>
+      <dt>Contato</dt><dd><a href="mailto:rotadosencontros.review@gmail.com">rotadosencontros.review@gmail.com</a></dd>
+    </dl>
 
-  <h2>2. Dados que coletamos</h2>
-  <p>Coletamos apenas os dados necessários para o funcionamento da plataforma:</p>
-  <table>
-    <tr><th>Dado</th><th>Finalidade</th><th>Obrigatório?</th></tr>
-    <tr><td>Nome / apelido</td><td>Identificação no perfil público</td><td>Sim</td></tr>
-    <tr><td>Endereço de e-mail</td><td>Autenticação e comunicações essenciais</td><td>Sim</td></tr>
-    <tr><td>Cidade e estado</td><td>Exibição no perfil e ranking regional</td><td>Sim</td></tr>
-    <tr><td>Foto de perfil (avatar)</td><td>Exibição no perfil público</td><td>Não</td></tr>
-    <tr><td>Tipo de usuário e estilo de moto</td><td>Personalização da experiência</td><td>Sim</td></tr>
-    <tr><td>Modelo da moto</td><td>Exibição no perfil</td><td>Não</td></tr>
-    <tr><td>Número de telefone</td><td>Contato opcional para suporte</td><td>Não</td></tr>
-    <tr><td>Fotos de eventos</td><td>Galeria pública de eventos</td><td>Não</td></tr>
-    <tr><td>Histórias e publicações</td><td>Conteúdo público na plataforma</td><td>Não</td></tr>
-    <tr><td>Dados de uso e atividade</td><td>Gamificação (pontos, nível, badges)</td><td>Automático</td></tr>
-  </table>
+    <section aria-labelledby="s1">
+      <h2 id="s1"><span class="num">1.</span>Quem somos</h2>
+      <p>O <strong>Rota dos Encontros</strong> é uma plataforma digital voltada à comunidade motociclística brasileira, que permite o cadastro e divulgação de eventos, motoclubes, perfis de pilotos e conteúdo relacionado. O responsável pelo tratamento dos dados é <strong>Maicon Kirsten</strong>, contato: <a href="mailto:rotadosencontros.review@gmail.com">rotadosencontros.review@gmail.com</a>.</p>
+    </section>
 
-  <h2>3. Como usamos os dados</h2>
-  <ul>
-    <li>Permitir login, cadastro e uso de todas as funcionalidades do app</li>
-    <li>Exibir perfil público, eventos, clubes e ranking de pilotos</li>
-    <li>Calcular pontuação e progresso no sistema de gamificação</li>
-    <li>Enviar comunicações essenciais relacionadas à conta</li>
-    <li>Moderar conteúdo e garantir a segurança da plataforma</li>
-    <li>Melhorar a experiência com base em dados agregados e anônimos</li>
-  </ul>
+    <section aria-labelledby="s2">
+      <h2 id="s2"><span class="num">2.</span>Dados que coletamos</h2>
+      <p>Coletamos apenas os dados necessários para o funcionamento da plataforma:</p><div class="tabela"><table><thead><tr><th>Dado</th><th>Finalidade</th><th>Obrigatório?</th></tr></thead><tbody><tr><td>Nome / apelido</td><td>Identificação no perfil público</td><td>Sim</td></tr><tr><td>Endereço de e-mail</td><td>Autenticação e comunicações essenciais</td><td>Sim</td></tr><tr><td>Cidade e estado</td><td>Exibição no perfil e ranking regional</td><td>Sim</td></tr><tr><td>Foto de perfil (avatar)</td><td>Exibição no perfil público</td><td>Não</td></tr><tr><td>Tipo de usuário e estilo de moto</td><td>Personalização da experiência</td><td>Sim</td></tr><tr><td>Modelo da moto</td><td>Exibição no perfil</td><td>Não</td></tr><tr><td>Número de telefone</td><td>Contato opcional para suporte</td><td>Não</td></tr><tr><td>Fotos de eventos</td><td>Galeria pública de eventos</td><td>Não</td></tr><tr><td>Histórias e publicações</td><td>Conteúdo público na plataforma</td><td>Não</td></tr><tr><td>Dados de uso e atividade</td><td>Gamificação (pontos, nível, badges)</td><td>Automático</td></tr></tbody></table></div>
+    </section>
 
-  <h2>4. Terceiros e processadores de dados</h2>
-  <p>Para funcionar, o Rota dos Encontros utiliza os seguintes serviços de terceiros que podem ter acesso a dados:</p>
-  <table>
-    <tr><th>Serviço</th><th>Finalidade</th><th>Política</th></tr>
-    <tr><td><strong>Base44</strong></td><td>Infraestrutura de backend, autenticação e banco de dados</td><td><a href="https://base44.com/privacy" target="_blank">base44.com/privacy</a></td></tr>
-    <tr><td><strong>Google Fonts</strong></td><td>Carregamento de fontes tipográficas (Bebas Neue, Oswald)</td><td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com</a></td></tr>
-    <tr><td><strong>Unsplash</strong></td><td>Imagens de capa padrão para eventos sem imagem própria</td><td><a href="https://unsplash.com/privacy" target="_blank">unsplash.com/privacy</a></td></tr>
-    <tr><td><strong>Leaflet / OpenStreetMap</strong></td><td>Exibição de mapa interativo de eventos</td><td><a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank">osmfoundation.org</a></td></tr>
-  </table>
-  <p>Não vendemos, alugamos nem compartilhamos dados pessoais com terceiros para fins comerciais ou publicitários.</p>
+    <section aria-labelledby="s3">
+      <h2 id="s3"><span class="num">3.</span>Como usamos os dados</h2>
+      <ul><li>Permitir login, cadastro e uso de todas as funcionalidades do app</li><li>Exibir perfil público, eventos, clubes e ranking de pilotos</li><li>Calcular pontuação e progresso no sistema de gamificação</li><li>Enviar comunicações essenciais relacionadas à conta</li><li>Moderar conteúdo e garantir a segurança da plataforma</li><li>Melhorar a experiência com base em dados agregados e anônimos</li></ul>
+    </section>
 
-  <h2>5. Dados de uso local (localStorage)</h2>
-  <p>O app armazena preferências locais no dispositivo do usuário (sem envio a servidores externos) para:</p>
-  <ul>
-    <li>Memorizar a última aba visitada na navegação</li>
-    <li>Controlar o intervalo de ping de atividade (throttle de 10 minutos)</li>
-    <li>Registrar preferências de notificações e modais dispensados</li>
-  </ul>
-  <p>Esses dados não contêm informações pessoais identificáveis e podem ser apagados limpando os dados do app no dispositivo.</p>
+    <section aria-labelledby="s4">
+      <h2 id="s4"><span class="num">4.</span>Terceiros e processadores de dados</h2>
+      <p>Para funcionar, o Rota dos Encontros utiliza os seguintes serviços de terceiros que podem ter acesso a dados:</p><div class="tabela"><table><thead><tr><th>Serviço</th><th>Finalidade</th><th>Política</th></tr></thead><tbody><tr><td><strong>Base44</strong></td><td>Infraestrutura de backend, autenticação e banco de dados</td><td><a href="https://base44.com/privacy" target="_blank" rel="noopener">base44.com/privacy</a></td></tr><tr><td><strong>Google Fonts</strong></td><td>Carregamento de fontes tipográficas (Bebas Neue, Oswald)</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com</a></td></tr><tr><td><strong>Unsplash</strong></td><td>Imagens de capa padrão para eventos sem imagem própria</td><td><a href="https://unsplash.com/privacy" target="_blank" rel="noopener">unsplash.com/privacy</a></td></tr><tr><td><strong>Leaflet / OpenStreetMap</strong></td><td>Exibição de mapa interativo de eventos</td><td><a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">osmfoundation.org</a></td></tr></tbody></table></div><p>Não vendemos, alugamos nem compartilhamos dados pessoais com terceiros para fins comerciais ou publicitários.</p>
+    </section>
 
-  <h2>6. Conteúdo público</h2>
-  <p>Informações que você publica voluntariamente — nome, cidade, foto, eventos criados, stories, fotos de eventos e comentários — são visíveis publicamente para outros usuários da plataforma. Tenha cuidado ao publicar informações sensíveis.</p>
+    <section aria-labelledby="s5">
+      <h2 id="s5"><span class="num">5.</span>Dados de uso local (localStorage)</h2>
+      <p>O app armazena preferências locais no dispositivo do usuário (sem envio a servidores externos) para:</p><ul><li>Memorizar a última aba visitada na navegação</li><li>Controlar o intervalo de ping de atividade (throttle de 10 minutos)</li><li>Registrar preferências de notificações e modais dispensados</li></ul><p>Esses dados não contêm informações pessoais identificáveis e podem ser apagados limpando os dados do app no dispositivo.</p>
+    </section>
 
-  <h2>7. Segurança</h2>
-  <p>Adotamos medidas técnicas para proteger seus dados, incluindo autenticação segura via Base44, controle de acesso por função (role-based), e verificações de autenticidade em todas as operações sensíveis. Nenhum sistema é 100% infalível, mas levamos a segurança a sério.</p>
+    <section aria-labelledby="s6">
+      <h2 id="s6"><span class="num">6.</span>Conteúdo público</h2>
+      <p>Informações que você publica voluntariamente — nome, cidade, foto, eventos criados, stories, fotos de eventos e comentários — são visíveis publicamente para outros usuários da plataforma. Tenha cuidado ao publicar informações sensíveis.</p>
+    </section>
 
-  <h2>8. Crianças e menores de idade</h2>
-  <div class="highlight">
-    <p>O Rota dos Encontros <strong>não é direcionado a menores de 13 anos</strong> e não coleta intencionalmente dados de crianças. Se identificarmos que um menor forneceu dados sem consentimento dos responsáveis, excluiremos essas informações imediatamente. Entre em contato conosco caso suspeite disso.</p>
-  </div>
+    <section aria-labelledby="s7">
+      <h2 id="s7"><span class="num">7.</span>Segurança</h2>
+      <p>Adotamos medidas técnicas para proteger seus dados, incluindo autenticação segura via Base44, controle de acesso por função (role-based), e verificações de autenticidade em todas as operações sensíveis. Nenhum sistema é 100% infalível, mas levamos a segurança a sério.</p>
+    </section>
 
-  <h2>9. Seus direitos (LGPD)</h2>
-  <p>Em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018), você tem direito a:</p>
-  <ul>
-    <li><strong>Acesso:</strong> saber quais dados temos sobre você</li>
-    <li><strong>Correção:</strong> corrigir dados incompletos, inexatos ou desatualizados</li>
-    <li><strong>Exclusão:</strong> solicitar a exclusão dos seus dados e conta — disponível diretamente no app em <em>Perfil → Excluir conta</em></li>
-    <li><strong>Portabilidade:</strong> solicitar seus dados em formato legível</li>
-    <li><strong>Revogação de consentimento:</strong> revogar autorização de uso dos dados a qualquer momento</li>
-    <li><strong>Oposição:</strong> opor-se a tratamentos realizados com base em legítimo interesse</li>
-  </ul>
-  <p>Para exercer qualquer desses direitos, entre em contato: <a href="mailto:rotadosencontros.review@gmail.com">rotadosencontros.review@gmail.com</a></p>
+    <section aria-labelledby="s8">
+      <h2 id="s8"><span class="num">8.</span>Crianças e menores de idade</h2>
+      <div class="nota"><p>O Rota dos Encontros <strong>não é direcionado a menores de 13 anos</strong> e não coleta intencionalmente dados de crianças. Se identificarmos que um menor forneceu dados sem consentimento dos responsáveis, excluiremos essas informações imediatamente. Entre em contato conosco caso suspeite disso.</p></div>
+    </section>
 
-  <h2>10. Retenção de dados</h2>
-  <p>Mantemos seus dados enquanto sua conta estiver ativa. Ao excluir sua conta, seus dados pessoais são removidos ou anonimizados em até <strong>30 dias</strong>. Conteúdos públicos (fotos, eventos, stories) podem ser mantidos de forma anonimizada para preservar o histórico da comunidade, conforme descrito no momento da exclusão.</p>
+    <section aria-labelledby="s9">
+      <h2 id="s9"><span class="num">9.</span>Seus direitos (LGPD)</h2>
+      <p>Em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018), você tem direito a:</p><ul><li><strong>Acesso:</strong> saber quais dados temos sobre você</li><li><strong>Correção:</strong> corrigir dados incompletos, inexatos ou desatualizados</li><li><strong>Exclusão:</strong> solicitar a exclusão dos seus dados e conta — disponível diretamente no app em <em>Perfil → Excluir conta</em></li><li><strong>Portabilidade:</strong> solicitar seus dados em formato legível</li><li><strong>Revogação de consentimento:</strong> revogar autorização de uso dos dados a qualquer momento</li><li><strong>Oposição:</strong> opor-se a tratamentos realizados com base em legítimo interesse</li></ul><p>Para exercer qualquer desses direitos, entre em contato: <a href="mailto:rotadosencontros.review@gmail.com">rotadosencontros.review@gmail.com</a></p>
+    </section>
 
-  <h2>11. Alterações nesta política</h2>
-  <p>Podemos atualizar esta política periodicamente. Notificaremos usuários sobre mudanças relevantes por meio do app. O uso continuado após as alterações implica aceitação da nova versão.</p>
+    <section aria-labelledby="s10">
+      <h2 id="s10"><span class="num">10.</span>Retenção de dados</h2>
+      <p>Mantemos seus dados enquanto sua conta estiver ativa. Ao excluir sua conta, seus dados pessoais são removidos ou anonimizados em até <strong>30 dias</strong>. Conteúdos públicos (fotos, eventos, stories) podem ser mantidos de forma anonimizada para preservar o histórico da comunidade, conforme descrito no momento da exclusão.</p>
+    </section>
 
-  <h2>12. Contato</h2>
-  <div class="highlight">
-    <p>📧 <strong>rotadosencontros.review@gmail.com</strong><br/>Respondemos em até 5 dias úteis.</p>
-  </div>
+    <section aria-labelledby="s11">
+      <h2 id="s11"><span class="num">11.</span>Alterações nesta política</h2>
+      <p>Podemos atualizar esta política periodicamente. Notificaremos usuários sobre mudanças relevantes por meio do app. O uso continuado após as alterações implica aceitação da nova versão.</p>
+    </section>
+
+    <section aria-labelledby="s12">
+      <h2 id="s12"><span class="num">12.</span>Contato</h2>
+      <div class="contato-bloco"><p class="rotulo">Canal oficial</p><p><strong><a href="mailto:rotadosencontros.review@gmail.com">rotadosencontros.review@gmail.com</a></strong><br>Respondemos em até 5 dias úteis.</p></div>
+    </section>
+  </main>
 </div>
 
-<footer>
-  <p>© 2026 Rota dos Encontros — Plataforma Nacional de Eventos Motociclísticos</p>
-  <p style="margin-top:8px;">
-    <a href="index.html">Privacidade</a> •
-    <a href="politica-eventos.html">Eventos</a> •
-    <a href="seguranca.html">Segurança</a> •
-    <a href="termos.html">Termos</a>
-  </p>
+<footer class="rodape">
+  <div class="rodape-interno">
+    <p>© 2026 Rota dos Encontros — Plataforma de eventos motociclísticos</p>
+    <nav aria-label="Documentos legais">
+        <a href="index.html">Política de Privacidade</a>
+        <a href="politica-eventos.html">Política de Eventos</a>
+        <a href="seguranca.html">Padrões de Segurança</a>
+        <a href="termos.html">Termos de Uso</a>
+      </nav>
+  </div>
 </footer>
+<script>
+  // celular: índice começa fechado (no computador ele fica sempre visível pelo CSS)
+  if (window.matchMedia('(max-width: 959px)').matches) {
+    var d = document.querySelector('.indice details'); if (d) d.removeAttribute('open');
+  }
+</script>
 </body>
 </html>

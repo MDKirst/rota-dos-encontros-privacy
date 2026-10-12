@@ -1,0 +1,279 @@
+/* Documentos legais — Rota dos Encontros
+   Visual sóbrio de documento: papel claro, tinta escura, serifa nos títulos.
+   Só fontes do sistema (nenhuma requisição a terceiros nesta página). */
+
+:root {
+  --papel: #faf9f6;
+  --folha: #ffffff;
+  --tinta: #1c1917;
+  --texto: #36302b;
+  --suave: #6b635c;
+  --linha: #e4dfd8;
+  --linha-forte: #cfc8bf;
+  --marca: #b45309;       /* laranja da marca, escurecido p/ contraste em fundo claro */
+  --marca-fina: #f97316;
+  --nota: #f4f1ec;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, "Times New Roman", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --papel: #141210;
+    --folha: #1b1815;
+    --tinta: #f2eee8;
+    --texto: #d6cfc6;
+    --suave: #9c938a;
+    --linha: #2e2a26;
+    --linha-forte: #3d3832;
+    --marca: #f59e4a;
+    --nota: #221e1a;
+  }
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--papel);
+  color: var(--texto);
+  font: 16px/1.7 var(--sans);
+}
+
+a { color: var(--marca); text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+
+/* ── topo ───────────────────────────────────────────── */
+.topo {
+  background: var(--folha);
+  border-bottom: 1px solid var(--linha);
+  border-top: 3px solid var(--marca-fina);
+}
+.topo-interno {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 18px 24px 0;
+}
+.marca-nome {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  color: var(--tinta);
+  letter-spacing: .01em;
+  margin: 0;
+}
+.marca-nome span {
+  display: block;
+  font-family: var(--sans);
+  font-size: .72rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--suave);
+  margin-top: 2px;
+}
+.abas {
+  display: flex;
+  gap: 4px;
+  margin-top: 14px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.abas::-webkit-scrollbar { display: none; }
+.abas a {
+  flex-shrink: 0;
+  padding: 10px 14px;
+  font-size: .9rem;
+  color: var(--suave);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+.abas a:hover { color: var(--tinta); }
+.abas a[aria-current="page"] {
+  color: var(--tinta);
+  font-weight: 600;
+  border-bottom-color: var(--marca);
+}
+
+/* ── corpo ──────────────────────────────────────────── */
+.pagina {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 40px 24px 64px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 40px;
+}
+@media (min-width: 960px) {
+  .pagina { grid-template-columns: 240px minmax(0, 1fr); }
+}
+
+.documento {
+  background: var(--folha);
+  border: 1px solid var(--linha);
+  border-radius: 4px;
+  padding: 40px 48px 48px;
+  max-width: 760px;
+}
+@media (max-width: 640px) {
+  .documento { padding: 28px 20px 36px; border-left: 0; border-right: 0; border-radius: 0; margin: 0 -24px; }
+  .pagina { padding-top: 24px; }
+}
+
+.tipo-doc {
+  font-size: .75rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--marca);
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+h1 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  line-height: 1.2;
+  color: var(--tinta);
+  margin: 0 0 18px;
+}
+.meta {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 16px;
+  font-size: .88rem;
+  color: var(--suave);
+  padding: 14px 0;
+  margin: 0 0 8px;
+  border-top: 1px solid var(--linha);
+  border-bottom: 1px solid var(--linha);
+}
+.meta dt { font-weight: 600; color: var(--texto); }
+.meta dd { margin: 0; }
+
+h2 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.35;
+  color: var(--tinta);
+  margin: 40px 0 12px;
+  scroll-margin-top: 24px;
+}
+h2 .num {
+  color: var(--marca);
+  font-variant-numeric: tabular-nums;
+  margin-right: .35em;
+}
+
+p { margin: 0 0 14px; }
+strong { color: var(--tinta); }
+ul { margin: 6px 0 16px; padding-left: 1.3em; }
+li { margin-bottom: 6px; }
+li::marker { color: var(--suave); }
+
+/* tabelas: rolam sozinhas no celular, a página não */
+.tabela { overflow-x: auto; margin: 14px 0 20px; border: 1px solid var(--linha); border-radius: 4px; }
+table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+th {
+  text-align: left;
+  font-weight: 600;
+  color: var(--tinta);
+  background: var(--nota);
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--linha-forte);
+  white-space: nowrap;
+}
+td { padding: 10px 14px; border-bottom: 1px solid var(--linha); vertical-align: top; }
+tr:last-child td { border-bottom: 0; }
+
+.nota {
+  background: var(--nota);
+  border-left: 3px solid var(--marca);
+  padding: 14px 18px;
+  margin: 16px 0 20px;
+  border-radius: 0 4px 4px 0;
+}
+.nota p:last-child { margin-bottom: 0; }
+
+.contato-bloco {
+  border: 1px solid var(--linha-forte);
+  border-radius: 4px;
+  padding: 16px 20px;
+  margin: 12px 0 0;
+}
+.contato-bloco p { margin: 0; }
+.contato-bloco .rotulo { font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--suave); margin-bottom: 4px; }
+
+/* ── índice ─────────────────────────────────────────── */
+.indice { font-size: .88rem; }
+.indice h2 {
+  font-family: var(--sans);
+  font-size: .75rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--suave);
+  margin: 0 0 10px;
+}
+.indice ol { list-style: none; margin: 0; padding: 0; border-left: 1px solid var(--linha-forte); }
+.indice li { margin: 0; }
+.indice a {
+  display: block;
+  padding: 5px 0 5px 14px;
+  margin-left: -1px;
+  border-left: 2px solid transparent;
+  color: var(--suave);
+  text-decoration: none;
+  line-height: 1.4;
+}
+.indice a:hover { color: var(--tinta); border-left-color: var(--marca); }
+
+@media (min-width: 960px) {
+  .indice { position: sticky; top: 24px; align-self: start; max-height: calc(100vh - 48px); overflow-y: auto; }
+  .indice details > summary { display: none; }
+  .indice details:not([open]) > ol { display: block; }
+}
+@media (max-width: 959px) {
+  .indice details {
+    background: var(--folha);
+    border: 1px solid var(--linha);
+    border-radius: 4px;
+    padding: 12px 16px;
+  }
+  .indice summary { cursor: pointer; font-weight: 600; color: var(--tinta); list-style: none; }
+  .indice summary::-webkit-details-marker { display: none; }
+  .indice summary::after { content: "+"; float: right; color: var(--suave); }
+  .indice details[open] summary::after { content: "−"; }
+  .indice details[open] summary { margin-bottom: 10px; }
+  .indice h2 { display: none; }
+}
+
+/* ── rodapé ─────────────────────────────────────────── */
+.rodape {
+  border-top: 1px solid var(--linha);
+  background: var(--folha);
+  color: var(--suave);
+  font-size: .85rem;
+}
+.rodape-interno {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 28px 24px 36px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 32px;
+  justify-content: space-between;
+}
+.rodape p { margin: 0; }
+.rodape nav { display: flex; flex-wrap: wrap; gap: 6px 18px; }
+.rodape nav a { color: var(--suave); text-decoration: none; }
+.rodape nav a:hover { color: var(--tinta); text-decoration: underline; }
+
+/* ── impressão ──────────────────────────────────────── */
+@media print {
+  :root { --papel: #fff; --folha: #fff; --tinta: #000; --texto: #111; --suave: #444; --marca: #000; --nota: #f3f3f3; }
+  .abas, .indice, .rodape nav { display: none !important; }
+  .topo { border: 0; }
+  .pagina { display: block; padding: 0; }
+  .documento { border: 0; padding: 0; max-width: none; }
+  a { color: inherit; text-decoration: none; }
+  h2 { break-after: avoid; }
+  .tabela, .nota { break-inside: avoid; }
+}
